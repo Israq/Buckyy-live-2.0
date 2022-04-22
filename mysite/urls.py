@@ -19,7 +19,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index, name='home'),
+    path('demo/',views.index, name='home'),
     path('page.html',views.page_3, name='page_3'),
     path('page_1.html',views.page_1, name='page_1'),
     path('', include('ekyc.urls')),

@@ -1,4 +1,4 @@
-from turtle import color, title
+
 from django.shortcuts import render
 from contact.models import Contact
 

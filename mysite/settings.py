@@ -11,8 +11,8 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 import os
 from pathlib import Path
-import django_heroku
-import dj_database_url
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0#(2xvp-s#v-coh8(7(+x6%#2*v9+v4ej8+id570at@&i2c=_p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['www.buckyy.com/demo','buckyy.com/demo']
 
 
 # Application definition
@@ -75,8 +75,8 @@ TEMPLATES = [
         },
     },
 ]
-
 WSGI_APPLICATION = 'mysite.wsgi.application'
+
 
 
 # Database
@@ -89,7 +89,7 @@ DATABASES = {
   'USER': 'buckpdht_israq',
   'PASSWORD': 'Buckyy@123',
   'HOST': 'localhost',
-  'PORT': '5432',
+  'PORT': '3306',
   }
 }
 
@@ -134,7 +134,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),
 ]
-django_heroku.settings(locals())
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
