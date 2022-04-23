@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0#(2xvp-s#v-coh8(7(+x6%#2*v9+v4ej8+id570at@&i2c=_p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.buckyy.com/demo','buckyy.com/demo']
+ALLOWED_HOSTS = ['www.buckyy.com','buckyy.com']
 
 
 # Application definition
@@ -75,7 +75,7 @@ TEMPLATES = [
         },
     },
 ]
-WSGI_APPLICATION = 'mysite.wsgi.application'
+
 
 
 
@@ -129,11 +129,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static'),
-]
+STATIC_URL = '/static/'
+STATIC_ROOT = '/home/buckpdht/public_html/static'
 
 
 # Default primary key field type
